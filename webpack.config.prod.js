@@ -53,7 +53,7 @@ export default {
     new CopyWebpackPlugin(
       [
         {
-          from: 'assets',
+          from: 'src/assets',
           to: 'assets',
           toType: 'dir'
         }
