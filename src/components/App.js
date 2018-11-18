@@ -20,9 +20,9 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path="/" component={DashboardPage} />
-          {/* <Route path="/fuel-savings" component={FuelSavingsPage} /> */}
-          {/* <Route path="/about" component={AboutPage} /> */}
-          {/* <Route path="/dashboard-page" component={DashboardPage} /> */}
+          <Route path="/fuel-savings" component={FuelSavingsPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/dashboard-page" component={DashboardPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>
