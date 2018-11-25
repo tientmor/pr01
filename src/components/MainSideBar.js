@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class MainSideBar extends Component {
   render() {
@@ -48,9 +48,9 @@ export default class MainSideBar extends Component {
                   <a className="nav-link" id="v-pills-settings-tab" href="#">
                     <i className="icon-settings" />
                   </a>
-                  <a href>
+                  <a>
                     <figure className="avatar">
-                      <img src="assets/img/dummy/u3.png" alt />
+                      <img src="assets/img/dummy/u3.png" />
                       <span className="avatar-badge online" />
                     </figure>
                   </a>
@@ -105,7 +105,7 @@ export default class MainSideBar extends Component {
                       <a href="#">
                         <i className="icon icon-account_box s-24" />
                         Users
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -131,7 +131,7 @@ export default class MainSideBar extends Component {
                     <li className="treeview">
                       <a href="#">
                         <i className="icon icon-package s-24" />
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                         <span>Inbox</span>
                       </a>
                       <ul className="treeview-menu">
@@ -155,11 +155,11 @@ export default class MainSideBar extends Component {
                         </li>
                       </ul>
                     </li>
-                    <li className="treeview ">
+                    <li className="treeview">
                       <a href="#">
-                        <i className="icon icon-package  s-24" />{" "}
+                        <i className="icon icon-package  s-24" />{' '}
                         <span>Apps</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -204,14 +204,14 @@ export default class MainSideBar extends Component {
                       <a href="#">
                         <i className="icon icon-documents3 s-24" />
                         <span>Pages</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
                           <a href="#">
                             <i className="icon icon-documents3" />
                             Blank Pages
-                            <i className=" icon-angle-left  pull-right" />
+                            <i className="icon-angle-left pull-right" />
                           </a>
                           <ul className="treeview-menu">
                             <li>
@@ -224,7 +224,7 @@ export default class MainSideBar extends Component {
                               <a href="panel-page-blank-tabs.html">
                                 <i className="icon icon-document" />
                                 Tabs Blank
-                                <i className=" icon-angle-left  pull-right" />
+                                <i className="icon-angle-left pull-right" />
                               </a>
                             </li>
                           </ul>
@@ -233,7 +233,7 @@ export default class MainSideBar extends Component {
                           <a href="#">
                             <i className="icon icon-fingerprint text-green" />
                             Auth Pages
-                            <i className=" icon-angle-left  pull-right" />
+                            <i className="icon-angle-left pull-right" />
                           </a>
                           <ul className="treeview-menu">
                             <li>
@@ -266,7 +266,7 @@ export default class MainSideBar extends Component {
                           <a href="#">
                             <i className="icon icon-bug text-red" />
                             Error Pages
-                            <i className=" icon-angle-left  pull-right" />
+                            <i className="icon-angle-left pull-right" />
                           </a>
                           <ul className="treeview-menu">
                             <li>
@@ -279,14 +279,14 @@ export default class MainSideBar extends Component {
                               <a href="panel-page-500.html">
                                 <i className="icon icon-document" />
                                 500 Page
-                                <i className=" icon-angle-left  pull-right" />
+                                <i className="icon-angle-left pull-right" />
                               </a>
                             </li>
                             <li>
                               <a href="panel-page-error.html">
                                 <i className="icon icon-document" />
                                 420 Page
-                                <i className=" icon-angle-left  pull-right" />
+                                <i className="icon-angle-left pull-right" />
                               </a>
                             </li>
                           </ul>
@@ -295,7 +295,7 @@ export default class MainSideBar extends Component {
                           <a href="#">
                             <i className="icon icon-documents3" />
                             Other Pages
-                            <i className=" icon-angle-left  pull-right" />
+                            <i className="icon-angle-left pull-right" />
                           </a>
                           <ul className="treeview-menu">
                             <li>
@@ -318,7 +318,7 @@ export default class MainSideBar extends Component {
                       <a href="#">
                         <i className="icon icon-goals-1  s-24" />
                         <span>Elements</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -391,9 +391,9 @@ export default class MainSideBar extends Component {
                     </li>
                     <li className="treeview ">
                       <a href="#">
-                        <i className="icon icon-wpforms  s-24 " />
+                        <i className="icon icon-wpforms s-24 " />
                         <span>Forms &amp; Plugins</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -472,9 +472,9 @@ export default class MainSideBar extends Component {
                     </li>
                     <li className="treeview">
                       <a href="#">
-                        <i className="icon icon-bar-chart2  s-24" />
+                        <i className="icon icon-bar-chart2 s-24" />
                         <span>Charts</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -523,9 +523,9 @@ export default class MainSideBar extends Component {
                     </li>
                     <li className="treeview">
                       <a href="#">
-                        <i className="icon icon-dialpad  s-24" />
+                        <i className="icon icon-dialpad s-24" />
                         <span>Extra</span>
-                        <i className=" icon-angle-left  pull-right" />
+                        <i className="icon-angle-left pull-right" />
                       </a>
                       <ul className="treeview-menu">
                         <li>
@@ -578,7 +578,7 @@ export default class MainSideBar extends Component {
                         {/* Single contact */}
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -597,7 +597,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -616,7 +616,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -640,7 +640,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -659,7 +659,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -678,7 +678,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -706,7 +706,7 @@ export default class MainSideBar extends Component {
                         {/* Single contact */}
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -725,7 +725,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -744,7 +744,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -768,7 +768,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -787,7 +787,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"
@@ -806,7 +806,7 @@ export default class MainSideBar extends Component {
                         </li>
                         <li className="my-1">
                           <div className="card no-b p-3">
-                            <div className>
+                            <div>
                               <div className="image mr-3  float-left">
                                 <img
                                   className="w-40px"

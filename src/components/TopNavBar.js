@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class TopNavBar extends Component {
   render() {
@@ -31,7 +31,7 @@ export default class TopNavBar extends Component {
                       <li>
                         <a href="#">
                           <div className="avatar float-left">
-                            <img src="assets/img/dummy/u4.png" alt />
+                            <img src="assets/img/dummy/u4.png" />
                             <span className="avatar-badge busy" />
                           </div>
                           <h4>
@@ -48,7 +48,7 @@ export default class TopNavBar extends Component {
                       <li>
                         <a href="#">
                           <div className="avatar float-left">
-                            <img src="assets/img/dummy/u1.png" alt />
+                            <img src="assets/img/dummy/u1.png" />
                             <span className="avatar-badge online" />
                           </div>
                           <h4>
@@ -65,7 +65,7 @@ export default class TopNavBar extends Component {
                       <li>
                         <a href="#">
                           <div className="avatar float-left">
-                            <img src="assets/img/dummy/u2.png" alt />
+                            <img src="assets/img/dummy/u2.png" />
                             <span className="avatar-badge idle" />
                           </div>
                           <h4>
@@ -82,7 +82,7 @@ export default class TopNavBar extends Component {
                       <li>
                         <a href="#">
                           <div className="avatar float-left">
-                            <img src="assets/img/dummy/u3.png" alt />
+                            <img src="assets/img/dummy/u3.png" />
                             <span className="avatar-badge busy" />
                           </div>
                           <h4>
