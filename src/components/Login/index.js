@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
+import { isEmpty, isEmail } from 'validator';
+import Input from './Builds/Input';
+import Form from './Builds/Form';
+import Button from './Builds/Button';
+
+const required = value => {
+  if (isEmpty(value)) {
+    return (
+      <small className="form-text text-danger">This field is required</small>
+    );
+  }
+};
+
+const email = value => {
+  if (!isEmail(value)) {
+    return (
+      <small className="form-text text-danger">{`${value} is not a valid email.`}</small>
+    );
+  }
+};
 
 class Login extends Component {
-  state = {
-    email: '',
-    password: ''
-  };
-
-  handleLogin = (e) => {
+  handleLogin = e => {
     e.preventDefault();
-    this.props.handleLogin(this.state);
+    this.props.handleLogin(this.form.getValues());
   };
 
   render() {
     const bind = statePath => ({
-      value: this.state[statePath] === '' ? '' : this.state[statePath],
-      onChange: e => this.setState({ [statePath]: e.target.value })
+      name: statePath,
+      ref: c => (this[statePath] = c)
     });
 
     return (
@@ -30,34 +45,35 @@ class Login extends Component {
                   waiting for you
                 </p>
               </div>
-              <form onSubmit={this.handleLogin}>
-                <div className="form-group has-icon">
-                  <i className="icon-envelope-o" />
-                  <input
-                    type="text"
-                    className="form-control form-control-lg"
-                    placeholder="Email Address"
-                    {...bind('email')}
-                  />
-                </div>
-                <div className="form-group has-icon">
-                  <i className="icon-user-secret" />
-                  <input
-                    type="text"
-                    className="form-control form-control-lg"
-                    placeholder="Password"
-                    {...bind('password')}
-                  />
-                </div>
-                <input
-                  type="submit"
-                  className="btn btn-primary btn-lg btn-block"
-                  value="Log In"
+              <Form
+                onSubmit={this.handleLogin}
+                ref={c => {
+                  this.form = c;
+                }}
+              >
+                <Input
+                  {...bind('email')}
+                  type="text"
+                  placeholder="Email"
+                  className="form-control form-control-lg"
+                  validations={[required, email]}
+                  iconClass="icon-envelope-o"
                 />
+                <Input
+                  {...bind('password')}
+                  type="text"
+                  placeholder="Password"
+                  className="form-control form-control-lg"
+                  validations={[required]}
+                  iconClass="icon-user-secret"
+                />
+                <Button className="btn btn-primary btn-lg btn-block">
+                  Log In
+                </Button>
                 <p className="forget-pass">
                   Have you forgot your username or password ?
                 </p>
-              </form>
+              </Form>
             </div>
           </div>
         </div>

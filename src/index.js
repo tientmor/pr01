@@ -14,7 +14,6 @@ const store = configureStore();
 const token = localStorage.getItem('token');
 
 if (token) {
-  // console.log(token);
   store.dispatch(actCheckAuth(token));
 }
 
