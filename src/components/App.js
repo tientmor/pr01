@@ -1,13 +1,14 @@
 /* eslint-disable import/no-named-as-default */
-import { Route, Switch } from 'react-router-dom';
-
-import AboutPage from './AboutPage';
-import FuelSavingsPage from './containers/FuelSavingsPage';
-import NotFoundPage from './NotFoundPage';
-import DashboardPage from './containers/DashboardPage';
+import { Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { hot } from 'react-hot-loader';
+
+import RouteAuth from './routes/RouteAuth';
+import RouteGuest from './routes/RouteGuest';
+
+import DashboardPage from './../containers/DashboardPage';
+import LoginPage from './../containers/LoginPage';
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
@@ -18,11 +19,9 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/fuel-savings" component={FuelSavingsPage} />
-          <Route path="/" component={DashboardPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/dashboard-page" component={DashboardPage} />
-          <Route component={NotFoundPage} />
+          <RouteAuth path="/" component={DashboardPage} exact />
+          <RouteAuth path="/dashboard-page" component={DashboardPage} />
+          <RouteGuest path="/login" component={LoginPage} />
         </Switch>
       </div>
     );

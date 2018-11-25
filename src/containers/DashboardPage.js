@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import MainSideBar from '../MainSideBar';
-import TopNavBar from '../TopNavBar';
+import {connect} from 'react-redux';
 
-export class DashboardPage extends Component {
+import MainSideBar from './../components/common/MainSideBar';
+import TopNavBar from './../components/common/TopNavBar';
+
+class DashboardPage extends Component {
   render() {
     return (
       <div className="dashboard-page">
@@ -135,4 +137,4 @@ export class DashboardPage extends Component {
   }
 }
 
-export default DashboardPage;
+export default connect(null,null)(DashboardPage);

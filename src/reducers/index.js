@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import fuelSavings from './fuelSavingsReducer';
+import authReducer from './authReducer';
 
 const rootReducer = combineReducers({
-  fuelSavings,
+  authReducer,
 });
 
 export default rootReducer;
